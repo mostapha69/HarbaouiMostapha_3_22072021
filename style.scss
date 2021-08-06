@@ -90,18 +90,14 @@ h1 {
 
 .section__restaurant {
     background-color: #F2F2F3;
-  margin-bottom:100px;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-bottom:110px;
+
 }
 .restaurants {
-  display: grid;
- grid-template-rows: 250px 250px 250px 250px;
- grid-template-columns: 350px;
-grid-row-gap:80px;
-  flex-wrap: wrap;
-}
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr; 
+    grid-row-gap:30px;
+  }
 
 //.restaurants{
  //   display:flex;
@@ -109,22 +105,22 @@ grid-row-gap:80px;
 //}
 
 .restaurants_card {
-  width: 350px;
-  height: 300px;
-  margin-bottom: 20px;
+  width: auto;
+  height: 350px;
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
   border-radius: $border-radius;
   background-color: white;
+  position:relative;
 }
 .restaurants_card-block-img {
   overflow: hidden;
-  height: 75%;
   border-radius: 25px 25px 0 0;
 }
 .restaurants img {
-  width: 350px;
-  height: 250px;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+    height:250px;
+
 }
 
 .restaurants_card-bottom-text-heart{
@@ -133,6 +129,12 @@ grid-row-gap:80px;
     padding-right: 20px;
 }
 
+.restaurants_card-little-img{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background-color: $color-tertiary;
+}
 
 //footer{
    
