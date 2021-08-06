@@ -97,14 +97,47 @@ h1 {
 }
 
 footer {
-  background-color: #082828;
+  background-color: #2D2828;
   color: white;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.footer__container-list {
+  display: flex;
+  flex-direction: column;
 }
 
 footer img {
   width: 100px;
-  padding-top: 20px;
   filter: invert(1);
+  padding-bottom: 10px;
+}
+
+.footer__container__restaurant {
+  display: flex;
+}
+
+.footer__container__restaurant__logo {
+  padding-right: 11px;
+}
+
+.footer__container__partner {
+  display: flex;
+}
+
+.footer__container__partner__logo {
+  padding-right: 5px;
+}
+
+.footer__container-list-all {
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
