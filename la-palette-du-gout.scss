@@ -1,0 +1,131 @@
+// variables
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+
+$font-family-text: roboto;
+$font-family-title: Shrikhand;
+
+$width-card: 300px;
+$height-card: 250px;
+
+$width-logo: 500px;
+$height-logo: 100px;
+
+$font-size-h1: 50px;
+$font-size-h2: 40px;
+
+$border-radius:25px;
+
+
+// mixins
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin:0px;
+    max-width: 1450px; 
+  }
+
+//HEADER
+
+//Logo
+.header{
+    display: flex;
+    align-items: center;
+    width: 80%;   //pour garder le logo au centre
+    justify-content: space-around;
+}
+header img {                        
+    width:150px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15px;
+    margin-bottom: 15px;
+    align-self: center;
+    
+}
+
+.header__icon{  //icone fleche
+    font-size: 20px;
+}
+
+// IMAGE BANNER
+.container__img img{
+    width:100%;
+}
+
+
+
+
+
+
+  //FOOTER
+
+footer{
+    background-color: #2D2828;
+    color: white;
+    
+    
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.footer__container-list{
+    display: flex;
+    flex-direction: column;
+}
+footer img {
+    width:100px;
+    filter:invert(1); //changer la couleur du logo en blanc
+    padding-bottom: 10px;
+}
+
+.footer__container__restaurant{
+    display: flex;
+}
+
+.footer__container__restaurant__logo{
+    padding-right: 11px;
+}
+.footer__container__partner{
+    display: flex;
+}
+.footer__container__partner__logo{
+padding-right: 5px;
+}
+
+.footer__container-list-all{
+    padding-bottom: 5px;
+}
+
+.footer__container-list-all a{
+    text-decoration: none;
+    color: white;
+}
+.footer__container-list-all a:hover{
+    cursor: pointer;
+}
