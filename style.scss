@@ -105,7 +105,8 @@ h1 {
     color: white;
     font-size: 15px;
     font-weight: bold;
-    max-width: 250px;  //le bouton ne s'élargit pas trop
+    cursor: pointer;
+    max-width: 250px;  //le bouton ne s'élargit pas trop   
 }
 
 
@@ -223,9 +224,10 @@ h1 {
 
 }
 
-.restaurants_card-bottom-heart-empty:active{
-    background: linear-gradient(#9356dc,#ff79da);
-    
+
+
+.restaurants_card-bottom-heart-empty:hover{
+   background: linear-gradient(#9356dc,#ff79da);
 }
 
 .restaurants_card-little-img{

@@ -60,6 +60,7 @@ h1 {
   color: white;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
   max-width: 250px;
 }
 
@@ -172,7 +173,7 @@ h1 {
   color: black;
 }
 
-.restaurants_card-bottom-heart-empty:active {
+.restaurants_card-bottom-heart-empty:hover {
   background: linear-gradient(#9356dc, #ff79da);
 }
 
