@@ -17,6 +17,7 @@ $font-size-h2: 40px;
 
 $border-radius:25px;
 
+
 // mixins
 
 @mixin flexCenter {
@@ -59,7 +60,7 @@ header img {
 .menu__subtitle{
     background-color: #F2F2F3;
     padding-top: 20px;
-    padding-bottom: 40px;
+    height:230px;
     
 }
 .logo__subtitle{
@@ -100,13 +101,64 @@ h1 {
     color: white;
     font-size: 15px;
     font-weight: bold;
+    max-width: 250px;  //le bouton ne s'élargit pas trop
 }
+
+
+//SECTION Fonctionnement
+
+.fonctionnement{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin-right: 20px;
+    margin-left:20px;
+    height:340px;
+}
+
+.process{
+    display: flex;
+    height:70px;
+    width:100%;
+    background-color: #F2F2F3;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: $border-radius;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+}
+
+.process_text{
+    font-weight: bold;
+
+}
+
+
+.process__num{
+    margin-right:20px;
+    color:white;
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    margin-left: -6px;
+}
+
+.process_icon{
+    margin-right: 20px;
+}
+
+.process_icon_3{
+    color: $color-primary;
+}
+
+
 
 //SECTION Restaurants
 
 .section__restaurant {
     background-color: #F2F2F3;
     padding-bottom: 60px;
+    padding-top: 30px;
 }
 .restaurants {
     display: grid;
@@ -117,7 +169,7 @@ h1 {
 
 .restaurants_card {
   width: auto;
-  height: 350px;
+  height: 310px;
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
   border-radius: $border-radius;
   background-color: white;
@@ -130,7 +182,7 @@ h1 {
 .restaurants img {
     width: 100%;
     object-fit: cover;
-    height:250px;
+    height:230px;
 
 }
 
@@ -172,6 +224,7 @@ h1 {
 
 h3{
     margin-bottom: -9px;
+    margin-top:10px;
 }
 
 
