@@ -83,6 +83,12 @@ h1 {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.process:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
 .process_text {
   font-weight: bold;
 }
@@ -241,6 +247,15 @@ footer img {
 
 .footer__container-list-all {
   padding-bottom: 5px;
+}
+
+.footer__container-list-all a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__container-list-all a:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 750px) {
