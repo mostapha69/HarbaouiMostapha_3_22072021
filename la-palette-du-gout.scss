@@ -73,11 +73,22 @@ header img {
     width:100%;
 }
 
-
+// SECTION ALL (TOUTES LES SECTIONS + TITRE H1)
+.sections__all{
+    background-color: #F2F2F3;
+    border-radius: 25px 25px 0 0;  // bordures angles du haut seulement
+    //margin-top:
+}
 //TITRE H1 + ICON 
 .h1__title{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+//ICONE COEUR
+.heart__icon{
+    font-size:25px;
 }
 
 
@@ -86,6 +97,7 @@ header img {
     display: grid;
     grid-template-rows: 3fr;
     grid-template-columns: 1fr;
+    grid-row-gap: 15px;
 }
 
 .container__entrees__meal__description{
@@ -95,6 +107,7 @@ header img {
 
 .container__entrees__meal__title{
     margin-bottom:5px;   //réduire marges des h3
+    margin-top:0;
 }
 
 
@@ -103,6 +116,7 @@ header img {
     display: grid;
     grid-template-rows: 3fr;
     grid-template-columns: 1fr;
+    grid-row-gap: 15px;
 }
 
 .container__plats__meal__description{
@@ -112,7 +126,36 @@ header img {
 
 .container__plats__meal__title{
     margin-bottom:5px;
+    margin-top:0;
 }
+
+//SECTION DESSERTS
+.container__desserts{
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+
+.container__desserts__meal__description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__desserts__meal__title{
+    margin-bottom: 5px;
+    margin-top:0;
+}
+
+.btn__container{        //boutons des Entrées, des Plats et des desserts
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 
 //FOOTER
 footer{

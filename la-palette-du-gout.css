@@ -28,15 +28,26 @@ header img {
   width: 100%;
 }
 
+.sections__all {
+  background-color: #F2F2F3;
+  border-radius: 25px 25px 0 0;
+}
+
 .h1__title {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.heart__icon {
+  font-size: 25px;
 }
 
 .container__entrees {
   display: grid;
   grid-template-rows: 3fr;
   grid-template-columns: 1fr;
+  grid-row-gap: 15px;
 }
 
 .container__entrees__meal__description {
@@ -46,12 +57,14 @@ header img {
 
 .container__entrees__meal__title {
   margin-bottom: 5px;
+  margin-top: 0;
 }
 
 .container__plats {
   display: grid;
   grid-template-rows: 3fr;
   grid-template-columns: 1fr;
+  grid-row-gap: 15px;
 }
 
 .container__plats__meal__description {
@@ -61,6 +74,33 @@ header img {
 
 .container__plats__meal__title {
   margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.container__desserts {
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+}
+
+.container__desserts__meal__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__desserts__meal__title {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.btn__container {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 footer {
