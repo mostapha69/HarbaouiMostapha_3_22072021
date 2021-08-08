@@ -68,6 +68,14 @@ header img {
     font-size: 20px;
 }
 
+// GARNDE CARTE IMAGE
+//.card__page{
+ //   position:relative;
+//}
+.container__img{
+    margin-bottom: -30px;
+}
+
 // IMAGE BANNER
 .container__img img{
     width:100%;
@@ -77,7 +85,10 @@ header img {
 .sections__all{
     background-color: #F2F2F3;
     border-radius: 25px 25px 0 0;  // bordures angles du haut seulement
-    //margin-top:
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom:30px;
 }
 //TITRE H1 + ICON 
 .h1__title{
@@ -151,11 +162,36 @@ header img {
     background-color: white;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 25px;
+    border-radius: 15px;
     padding-right: 10px;
     padding-left: 10px;
 }
 
+//BOUTON "Commander"
+.btn__one{
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(#ff79da,#9356dc);
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 250px;  //le bouton ne s'élargit pas trop 
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);  
+}
+
+.btn__one:hover{
+    opacity:0.8;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.4);
+
+}
 
 //FOOTER
 footer{
