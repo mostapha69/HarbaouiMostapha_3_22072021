@@ -55,23 +55,24 @@ body {
 //Logo
 .header{
     display: flex;
-    align-items: center;
-    width: 80%;   //pour garder le logo au centre
-    justify-content: space-around;
+   align-items: center;
+   padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    justify-content: center;
 }
-header img {                        
-    width:150px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:15px;
-    margin-bottom: 15px;
-    align-self: center;
-    
+
+
+header img {  
+    width:150px;                      
 }
 
 .header__icon{  //icone fleche
     font-size: 20px;
     color:black;
+    position: absolute;
+    left: 20px;
+    text-decoration: black;
 }
 
 // GARNDE CARTE IMAGE
@@ -106,7 +107,7 @@ header img {
 //TITRE H1 + ICON 
 .h1__title{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .h1__title h1 {
@@ -191,11 +192,16 @@ header img {
     padding-right: 20px;
     padding-left: 10px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);
+    
 }
 
 .btn__container:hover{
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.4);
     cursor:pointer;
+}
+// ANIMATIONS BOUTONS
+#btn__container__1{
+    animation: opacity 1s both; 
 }
 
 //BOUTON "Commander"
@@ -276,7 +282,7 @@ padding-right: 5px;
     cursor: pointer;
 }
 
-@media screen and (min-width:1170px){
+@media screen and (min-width:600px){
     .sections{
         display: flex;
         justify-content: space-between;
@@ -303,23 +309,23 @@ padding-right: 5px;
     }
 }
 
-@media screen and (min-width:751px) and (max-width:1169px){
+@media screen and (min-width:600px) and (max-width:1169px){
     .container__plats{
         display: grid;
          grid-template-rows: 3fr;
-         grid-template-columns: 500px;
+         grid-template-columns: 400px;
          grid-row-gap: 15px;
      }
      .container__entrees{
          display: grid;
          grid-template-rows: 3fr;
-         grid-template-columns: 500px;
+         grid-template-columns: 400px;
          grid-row-gap: 15px;
      }
      .container__desserts{
          display: grid;
          grid-template-rows: 3fr;
-         grid-template-columns: 500px;
+         grid-template-columns: 400px;
          grid-row-gap: 15px;
      }
      .sections{
