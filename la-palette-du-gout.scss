@@ -83,10 +83,11 @@ header img {
 
 
 //SECTIONS ALL + BTN__ONE
-.sections{
+.container__main__sections{
     background-color: #F2F2F3;
     padding-bottom: 30px;
 }
+
 // SECTION ALL (TOUTES LES SECTIONS + TITRE H1) SANS BTN__ONE
 .sections__all{
     background-color: #F2F2F3;
@@ -264,10 +265,27 @@ padding-right: 5px;
 }
 
 @media screen and (min-width:750px){
-    .sections__all{
-        display:grid;
-        grid-template-columns: 3fr;
-        grid-template-rows: 1fr;
-        grid-column-gap:30px;
+    .sections{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container__plats{
+       display: grid;
+        grid-template-rows: 3fr;
+        grid-template-columns: 300px;
+        grid-row-gap: 15px;
+    }
+    .container__entrees{
+        display: grid;
+        grid-template-rows: 3fr;
+        grid-template-columns: 300px;
+        grid-row-gap: 15px;
+    }
+    .container__desserts{
+        display: grid;
+        grid-template-rows: 3fr;
+        grid-template-columns: 300px;
+        grid-row-gap: 15px;
     }
 }

@@ -32,7 +32,7 @@ header img {
   width: 100%;
 }
 
-.sections {
+.container__main__sections {
   background-color: #F2F2F3;
   padding-bottom: 30px;
 }
@@ -205,11 +205,30 @@ footer img {
 }
 
 @media screen and (min-width: 750px) {
-  .sections__all {
+  .sections {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .container__plats {
     display: grid;
-    grid-template-columns: 3fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
+    grid-template-rows: 3fr;
+    grid-template-columns: 300px;
+    grid-row-gap: 15px;
+  }
+
+  .container__entrees {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 300px;
+    grid-row-gap: 15px;
+  }
+
+  .container__desserts {
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 300px;
+    grid-row-gap: 15px;
   }
 }
 
