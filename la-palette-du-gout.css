@@ -32,6 +32,11 @@ header img {
   width: 100%;
 }
 
+.sections {
+  background-color: #F2F2F3;
+  padding-bottom: 30px;
+}
+
 .sections__all {
   background-color: #F2F2F3;
   border-radius: 25px 25px 0 0;
@@ -113,6 +118,12 @@ header img {
   border-radius: 15px;
   padding-right: 20px;
   padding-left: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn__container:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .btn__one {
@@ -191,6 +202,15 @@ footer img {
 
 .footer__container-list-all a:hover {
   cursor: pointer;
+}
+
+@media screen and (min-width: 750px) {
+  .sections__all {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+  }
 }
 
 /*# sourceMappingURL=la-palette-du-gout.css.map */

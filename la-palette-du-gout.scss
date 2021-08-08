@@ -81,7 +81,13 @@ header img {
     width:100%;
 }
 
-// SECTION ALL (TOUTES LES SECTIONS + TITRE H1)
+
+//SECTIONS ALL + BTN__ONE
+.sections{
+    background-color: #F2F2F3;
+    padding-bottom: 30px;
+}
+// SECTION ALL (TOUTES LES SECTIONS + TITRE H1) SANS BTN__ONE
 .sections__all{
     background-color: #F2F2F3;
     border-radius: 25px 25px 0 0;  // bordures angles du haut seulement
@@ -169,6 +175,12 @@ header img {
     border-radius: 15px;
     padding-right: 20px;
     padding-left: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);
+}
+
+.btn__container:hover{
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.4);
+    cursor:pointer;
 }
 
 //BOUTON "Commander"
@@ -196,6 +208,8 @@ header img {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.4);
 
 }
+
+
 
 //FOOTER
 footer{
@@ -247,4 +261,13 @@ padding-right: 5px;
 }
 .footer__container-list-all a:hover{
     cursor: pointer;
+}
+
+@media screen and (min-width:750px){
+    .sections__all{
+        display:grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 1fr;
+        grid-column-gap:30px;
+    }
 }
