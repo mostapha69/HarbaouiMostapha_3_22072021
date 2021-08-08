@@ -74,12 +74,47 @@ header img {
 }
 
 
+//TITRE H1 + ICON 
+.h1__title{
+    display: flex;
+    justify-content: space-around;
+}
 
 
+//SECTION ENTREES
+.container__entrees{
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+}
+
+.container__entrees__meal__description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__entrees__meal__title{
+    margin-bottom:5px;   //réduire marges des h3
+}
 
 
-  //FOOTER
+//SECTION PLATS
+.container__plats{
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+}
 
+.container__plats__meal__description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__plats__meal__title{
+    margin-bottom:5px;
+}
+
+//FOOTER
 footer{
     background-color: #2D2828;
     color: white;

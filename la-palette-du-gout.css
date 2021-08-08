@@ -28,6 +28,41 @@ header img {
   width: 100%;
 }
 
+.h1__title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container__entrees {
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr;
+}
+
+.container__entrees__meal__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__entrees__meal__title {
+  margin-bottom: 5px;
+}
+
+.container__plats {
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr;
+}
+
+.container__plats__meal__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__plats__meal__title {
+  margin-bottom: 5px;
+}
+
 footer {
   background-color: #2D2828;
   color: white;
