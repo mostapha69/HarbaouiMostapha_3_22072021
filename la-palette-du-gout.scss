@@ -44,6 +44,11 @@ body {
     margin:0px;
     max-width: 1450px; 
   }
+@media  screen and (min-width:1450px){
+    body{
+        margin:auto;
+    }
+}
 
 //HEADER
 
@@ -66,6 +71,7 @@ header img {
 
 .header__icon{  //icone fleche
     font-size: 20px;
+    color:black;
 }
 
 // GARNDE CARTE IMAGE
@@ -103,6 +109,9 @@ header img {
     justify-content: space-around;
     align-items: center;
 }
+.h1__title h1 {
+    font-family: shrikhand;
+}
 
 //ICONE COEUR
 .heart__icon{
@@ -110,6 +119,11 @@ header img {
 }
 
 
+//LES 3 SECTIONS
+.sections{
+    padding-left: 10px;
+    padding-right:10px;
+}
 //SECTION ENTREES
 .container__entrees{
     display: grid;
@@ -215,9 +229,7 @@ header img {
 //FOOTER
 footer{
     background-color: #2D2828;
-    color: white;
-    
-    
+    color: white;    
 }
 
 .footer__container{
@@ -264,10 +276,10 @@ padding-right: 5px;
     cursor: pointer;
 }
 
-@media screen and (min-width:750px){
+@media screen and (min-width:950px){
     .sections{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .container__plats{
