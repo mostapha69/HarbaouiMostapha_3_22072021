@@ -102,6 +102,10 @@ header img {
   margin-top: 0;
 }
 
+.container__price {
+  font-weight: bold;
+}
+
 .btn__container {
   background-color: white;
   padding-top: 10px;
