@@ -169,6 +169,7 @@ header img {
     grid-template-rows: 3fr;
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
+    transition: opacity 1s jump-both;
 }
 
 .container__desserts__meal__description{
@@ -193,8 +194,7 @@ header img {
     padding-right: 20px;
     padding-left: 10px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);
-    animation: opacity 1s both;
-    
+       
 }
 
 .btn__container:hover{
@@ -213,6 +213,25 @@ header img {
 #btn__anination3{
     animation-delay: 0.3s;
 }
+#btn__anination4{
+    animation-delay: 0.4s;
+}
+#btn__anination5{
+    animation-delay: 0.5s;
+}
+#btn__anination6{
+    animation-delay: 0.6s;
+}
+#btn__anination7{
+    animation-delay: 0.7s;
+}
+#btn__anination8{
+    animation-delay: 0.8s;
+}
+#btn__anination9{
+    animation-delay: 0.9s;
+}
+  
   
 //BOUTON "Commander"
 .btn__one{
