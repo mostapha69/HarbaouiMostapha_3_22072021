@@ -194,7 +194,7 @@ header img {
     padding-right: 20px;
     padding-left: 10px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);
-       
+    overflow: hidden; 
 }
 
 .btn__container:hover{
@@ -232,6 +232,29 @@ header img {
     animation-delay: 0.9s;
 }
   
+.container__entrees__meal__description__title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    padding-right: 12px;
+}
+
+.container__plats__meal__description__title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    padding-right: 12px;
+}
+
+.container__desserts__meal__description__title{
+    text-overflow: ellipsis;   //pour les "..."
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    padding-right: 12px;
+}
   
 //BOUTON "Commander"
 .btn__one{

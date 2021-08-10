@@ -111,7 +111,7 @@ header img {
   grid-template-rows: 3fr;
   grid-template-columns: 1fr;
   grid-row-gap: 15px;
-  
+  transition: opacity 1s jump-both;
 }
 
 .container__desserts__meal__description {
@@ -136,7 +136,7 @@ header img {
   padding-right: 20px;
   padding-left: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  transition: opacity 1s;
+  overflow: hidden;
 }
 
 .btn__container:hover {
@@ -145,39 +145,63 @@ header img {
 }
 
 #btn__anination1 {
-  transition-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 #btn__anination2 {
-  transition-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 #btn__anination3 {
-  transition-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 #btn__anination4 {
-    transition-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 #btn__anination5 {
-    transition-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 #btn__anination6 {
-    transition-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 #btn__anination7 {
-    transition-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 #btn__anination8 {
-    transition-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 #btn__anination9 {
-    transition-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.container__entrees__meal__description__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  padding-right: 12px;
+}
+
+.container__plats__meal__description__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  padding-right: 12px;
+}
+
+.container__desserts__meal__description__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+  padding-right: 12px;
 }
 
 .btn__one {
