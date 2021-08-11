@@ -194,7 +194,7 @@ header img {
     padding-right: 20px;
     padding-left: 10px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);
-    overflow: hidden; 
+    overflow: hidden; //pour rogner une partie du texte du bouton
 }
 
 .slide-in-bottom{
@@ -250,8 +250,8 @@ header img {
  */
  @-webkit-keyframes slide-in-bottom {
     0% {
-      -webkit-transform: translateY(1000px);
-              transform: translateY(1000px);
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
       opacity: 0;
     }
     100% {
@@ -262,8 +262,8 @@ header img {
   }
   @keyframes slide-in-bottom {
     0% {
-      -webkit-transform: translateY(1000px);
-              transform: translateY(1000px);
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
       opacity: 0;
     }
     100% {
@@ -282,7 +282,7 @@ header img {
     cursor:pointer;
 }
 // ANIMATIONS BOUTONS
-#btn__anination1{
+/*#btn__anination1{
     
     animation-delay: 0.1s;
 }
@@ -291,9 +291,9 @@ header img {
     animation-delay: 0.2s;
 }
 #btn__anination3{
-    animation-delay: 1s;
+    animation-delay: 0.3s;
 }
-/*#btn__anination4{
+#btn__anination4{
     animation-delay: 0.4s;
 }
 #btn__anination5{
