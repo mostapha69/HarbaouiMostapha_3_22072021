@@ -16,25 +16,18 @@ body {
   left: 45%;
   top: 50%;
   color: #9356dc;
-  -webkit-animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
-  animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
+  -webkit-animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3;
+  animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3;
 }
 
 @keyframes spinner-loading {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    visibility: visible;
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.7;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    visibility: hidden;
-    opacity: 0;
   }
 }
 .header {
@@ -161,7 +154,7 @@ header img {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 15px;
-  padding-right: 20px;
+  padding-right: 15px;
   padding-left: 10px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -312,9 +305,9 @@ header img {
   right: 0;
   top: 0px;
   font-size: 30px;
-  padding-top: 15px;
   background-color: #99e2d0;
-  
+  padding-top: 15px;
+  display: none;
 }
 
 .fa-check-circle {
