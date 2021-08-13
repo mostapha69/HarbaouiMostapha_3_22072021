@@ -9,6 +9,34 @@ body {
     margin: auto;
   }
 }
+.spinner-loading {
+  z-index: 2;
+  font-size: 100px;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  color: #9356dc;
+  -webkit-animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
+  animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
+}
+
+@keyframes spinner-loading {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    visibility: visible;
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -140,10 +168,6 @@ header img {
 }
 
 .slide-in-bottom {
-  animation: opacity 2s;
-}
-
-.slide-in-bottom {
   -webkit-animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -197,8 +221,8 @@ header img {
  */
 @-webkit-keyframes slide-in-bottom {
   0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
@@ -209,8 +233,8 @@ header img {
 }
 @keyframes slide-in-bottom {
   0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
@@ -219,23 +243,22 @@ header img {
     opacity: 1;
   }
 }
-/*.btn__container:hover {
+.btn__container:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
 
-#btn__anination1 {
-  animation-delay: 0.1s;
+/*#btn__anination1{
+
+    animation-delay: 0.1s;
 }
 
-#btn__anination2 {
-  animation-delay: 0.2s;
+#btn__anination2{
+    animation-delay: 0.2s;
 }
-
-#btn__anination3 {
-  animation-delay: 1s;
+#btn__anination3{
+    animation-delay: 0.3s;
 }
-
 #btn__anination4{
     animation-delay: 0.4s;
 }
@@ -278,8 +301,25 @@ header img {
   padding-right: 12px;
 }
 
+.btn__container {
+  position: relative;
+}
+
 .btn-valid {
-  display: none;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 30px;
+  padding-top: 15px;
+  background-color: #99e2d0;
+  
+}
+
+.fa-check-circle {
+  color: #99e2d0;
+  background-color: white;
 }
 
 .btn__one {
