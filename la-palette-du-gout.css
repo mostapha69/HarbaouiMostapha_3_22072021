@@ -468,6 +468,7 @@ footer img {
 
 .footer__container-list-all {
   padding-bottom: 5px;
+  margin-right: 30px;
 }
 
 .footer__container-list-all a {
@@ -479,6 +480,12 @@ footer img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 900px) {
+  .footer__container-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 600px) {
   .sections {
     display: flex;

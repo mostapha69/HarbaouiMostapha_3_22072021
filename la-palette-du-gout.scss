@@ -591,6 +591,7 @@ padding-right: 5px;
 
 .footer__container-list-all{
     padding-bottom: 5px;
+    margin-right: 30px;
 }
 
 .footer__container-list-all a{
@@ -600,6 +601,13 @@ padding-right: 5px;
 .footer__container-list-all a:hover{
     cursor: pointer;
 }
+@media screen and (min-width:900px) {
+    .footer__container-list{
+        display: flex;
+        flex-direction: row;
+    }
+
+ }
 
 @media screen and (min-width:600px){
     .sections{
@@ -653,3 +661,4 @@ padding-right: 5px;
        flex-wrap: wrap;
     }
 }
+
