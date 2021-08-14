@@ -348,10 +348,11 @@ header img {
   width: 75px;
   height: 100%;
   position: absolute;
-  right: -75px;
+  right: 0;
   top: 0px;
   font-size: 30px;
   background-color: #99e2d0;
+  margin-right: -75px;
 }
 
 .fa-check {

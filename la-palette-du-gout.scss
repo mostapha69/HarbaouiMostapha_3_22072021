@@ -444,12 +444,15 @@ header img {
     width:75px;
     height:100%;
     position:absolute;
-    right:-75px;
+    right:0;
     top:0px;
     font-size:30px;
     // padding-top: 15px;
     background-color: $color-tertiary;
     // padding-top: 15px;
+    // display: block;
+    margin-right: -75px;
+
     
 }
 
