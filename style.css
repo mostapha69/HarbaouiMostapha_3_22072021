@@ -78,7 +78,7 @@ h1 {
   row-gap: 10px;
   margin-right: 20px;
   margin-left: 20px;
-  height: 340px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 900px) {
@@ -88,6 +88,7 @@ h1 {
     column-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     height: auto;
+    
   }
 }
 .process {
@@ -109,6 +110,7 @@ h1 {
 
 .process_text {
   font-weight: bold;
+  font-size: 18px;
 }
 
 .process__num {
@@ -136,6 +138,7 @@ h1 {
   height: 1430px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 30px;
 }
 
 .restaurants {
