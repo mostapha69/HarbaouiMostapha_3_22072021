@@ -444,24 +444,42 @@ header img {
     width:30px;
     height:100%;
     position:absolute;
-    right:0;
+    right:-30px;
     top:0px;
     font-size:30px;
     // padding-top: 15px;
     background-color: $color-tertiary;
     padding-top: 15px;
-    display: none;
+    
 }
 
-.fa-check-circle{
+.fa-check{
     color: $color-tertiary;
-    background-color: white;
+     background-color: white;
+    border-radius: 50%;
 }
 
-//.btn-valid:hover{
-   // display: block;
+.btn-valid:hover{
+    animation-name: btn-valid ;
+    animation-duration:1s;
+    animation-timing-function: linear;
 
-//}
+}
+
+@keyframes btn-valid {
+0% {
+    -webkit-transform: rotate(0);
+              transform: rotate(0);
+              transform: translateX(0);
+}
+
+100%{
+    -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+              transform: translateX(-75px);
+              
+}
+}
 
 
 //BOUTON "Commander"

@@ -50,18 +50,16 @@ body {
   }
 }
 .page {
-  animation-name: page  ;
-  animation-duration: 3.1s;
-  -webkit-animation-name: page ;
-  -webkit-animation-duration:3.1s;
+  animation-name: page 3s;
+  -webkit-animation-name: page 3s;
 }
 
 @keyframes page {
   0% {
-    opacity: 0.2;
+    opacity: 0.4;
   }
-  90% {
-    opacity: 0.2;
+  70% {
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
@@ -69,10 +67,10 @@ body {
 }
 @-webkit-keyframes page {
   0% {
-    opacity: 0.2;
+    opacity: 0.4;
   }
-  90% {
-    opacity: 0.2;
+  70% {
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
@@ -350,19 +348,37 @@ header img {
   width: 30px;
   height: 100%;
   position: absolute;
-  right: 0;
+  right: -30px;
   top: 0px;
   font-size: 30px;
   background-color: #99e2d0;
   padding-top: 15px;
-  display: none;
 }
 
-.fa-check-circle {
+.fa-check {
   color: #99e2d0;
   background-color: white;
+  border-radius: 50%;
 }
 
+.btn-valid:hover {
+  animation-name: btn-valid;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes btn-valid {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform: translateX(-75px);
+  }
+}
 .btn__one {
   text-align: center;
   border-radius: 25px;
