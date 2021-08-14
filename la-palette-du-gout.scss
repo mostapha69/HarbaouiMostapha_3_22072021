@@ -441,15 +441,15 @@ header img {
 }
 .btn-valid{
     //display: none;
-    width:30px;
+    width:75px;
     height:100%;
     position:absolute;
-    right:-30px;
+    right:-75px;
     top:0px;
     font-size:30px;
     // padding-top: 15px;
     background-color: $color-tertiary;
-    padding-top: 15px;
+    // padding-top: 15px;
     
 }
 
@@ -457,28 +457,66 @@ header img {
     color: $color-tertiary;
      background-color: white;
     border-radius: 50%;
+    
 }
 
+.fa-check:hover{
+    animation-name: fa-check;
+    animation-duration: 1s;
+    
+}
+@keyframes fa-check {
+    0% {
+        -webkit-transform: rotate(0);
+                  transform: rotate(0);
+                  
+                  
+    }
+    
+    100%{
+        -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                  
+                  
+    }
+}
+
+
+// h3{
+//     display: inline;
+// }
 .btn-valid:hover{
     animation-name: btn-valid ;
     animation-duration:1s;
-    animation-timing-function: linear;
+    // animation-timing-function: linear;
 
 }
 
 @keyframes btn-valid {
 0% {
-    -webkit-transform: rotate(0);
-              transform: rotate(0);
-              transform: translateX(0);
+    -webkit-transform: translateX(0);
+              transform: translate(0);
+              
 }
 
 100%{
-    -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
+    -webkit-transform: translateX(-75px);
               transform: translateX(-75px);
               
 }
+}
+@-webkit-keyframes btn-valid{
+    0% {
+        -webkit-transform: translateX(0);
+                  transform: translateX(0);
+    }
+    
+    100%{
+        -webkit-transform: translateX(-75px);
+                  transform: translateX(-75px);
+                  
+    }
+
 }
 
 

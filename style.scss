@@ -120,7 +120,8 @@ h1 {
 
 //SECTION Fonctionnement
 
-.fonctionnement{
+.fonctionnement__process{
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     row-gap: 10px;
@@ -128,6 +129,17 @@ h1 {
     margin-left:20px;
     height:340px;
 }
+
+@media screen and (min-width:900px){
+    .fonctionnement__process{
+        grid-template-rows: 1fr;
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        height:auto;
+    }
+}
+
 
 .process{
     display: flex;
@@ -166,8 +178,8 @@ h1 {
     margin-right: 20px;
 }
 
-.process_icon_3{
-    color: $color-primary;
+.process_icon:hover{
+    color:$color-primary;
 }
 
 
@@ -310,6 +322,7 @@ padding-right: 5px;
 
 .footer__container-list-all{
     padding-bottom: 5px;
+    margin-right: 30px;
 }
 
 .footer__container-list-all a{
@@ -333,4 +346,12 @@ padding-right: 5px;
       .section__restaurant{
           height: auto;
       }
+ }
+
+ @media screen and (min-width:900px) {
+    .footer__container-list{
+        display: flex;
+        flex-direction: row;
+    }
+
  }

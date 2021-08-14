@@ -345,14 +345,13 @@ header img {
 }
 
 .btn-valid {
-  width: 30px;
+  width: 75px;
   height: 100%;
   position: absolute;
-  right: -30px;
+  right: -75px;
   top: 0px;
   font-size: 30px;
   background-color: #99e2d0;
-  padding-top: 15px;
 }
 
 .fa-check {
@@ -361,21 +360,43 @@ header img {
   border-radius: 50%;
 }
 
-.btn-valid:hover {
-  animation-name: btn-valid;
+.fa-check:hover {
+  animation-name: fa-check;
   animation-duration: 1s;
-  animation-timing-function: linear;
 }
 
-@keyframes btn-valid {
+@keyframes fa-check {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    transform: translateX(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+.btn-valid:hover {
+  animation-name: btn-valid;
+  animation-duration: 1s;
+}
+
+@keyframes btn-valid {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-75px);
+    transform: translateX(-75px);
+  }
+}
+@-webkit-keyframes btn-valid {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-75px);
     transform: translateX(-75px);
   }
 }
