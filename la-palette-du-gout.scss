@@ -43,6 +43,7 @@ body {
     font-family: "Roboto", sans-serif;
     margin:0px;
     max-width: 1450px; 
+    // z-index: 2;
   }
 @media  screen and (min-width:1450px){
     body{
@@ -54,12 +55,14 @@ body {
 //SPINNER-LOADING
 .spinner-loading{
     //  margin: auto;
-  // z-index: 1;
+   
      font-size:100px;
     position: absolute;
     left:45%;
     top:50%;
     color:#9356dc;
+    z-index: 4;
+     visibility: hidden;
 //  pointer-events: none;
 // animation-fill-mode: none;
 //  animation-iteration-count: 1.5;
@@ -82,46 +85,69 @@ body {
             0% {
               -webkit-transform: rotate(0);
               transform: rotate(0);
+              visibility:visible;
+    opacity: 1;
+  }
              
-            }
+            
             100% {
               -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
-             
+              opacity: 0;
+              visibility: hidden;
             }
           }
           @-webkit-keyframes spinner-loading {
             0% {
               -webkit-transform: rotate(0);
               transform: rotate(0);
+              opacity:1;
+              visibility: visible;
               
             }
             100% {
               -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
+              opacity:0;
+              visibility: hidden;
               
             }
         }
-//  @keyframes spinner-loading {
-//   0% {
-//     -webkit-visibility:visible;
-//     visibility:visible;
-//     opacity:1;
-//   }
 
-//    80% {
-//       opacity:0.7;
 
-//   }
-//   100% {
-//      visibility:hidden;
-//    }
-// }
+ .page{
+     animation-name: page  3s ;
+     -webkit-animation-name: page 3s;
+ }
+ @keyframes page{
+    0% {
+    opacity: 0.4;
+}
 
-//  .page{
-//     z-index:3;
-//     //  opacity:0.4;
-//  }
+70%{
+    opacity: 0.6;
+}
+     
+    
+    100% {
+      opacity: 1;
+      
+    }
+  }
+  @-webkit-keyframes page {
+    0% {
+        opacity: 0.4;
+      
+    }
+    70%{
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+      
+    }
+}
+
 //HEADER
 
 //Logo
