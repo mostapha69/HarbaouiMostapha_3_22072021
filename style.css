@@ -243,24 +243,34 @@ h1 {
 }
 
 .restaurants_card-bottom-heart-completed {
-  display: none;
-  background: linear-gradient(#9356dc, #ff79da);
-  font-size: 25px;
+  font-size: 20px;
+  color: #9356dc;
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  transform: scale(0.2);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  opacity: 0;
 }
 
 .restaurants_card-bottom-heart-completed:hover {
-  display: none;
-  background: linear-gradient(#9356dc, #ff79da);
+  transform: scale(1);
+  opacity: 1;
 }
 
 .restaurants_card-bottom-heart-empty {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
-  color: black;
+  bottom: 20px;
+  right: 20px;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transform: scale(1);
 }
 
 .restaurants_card-bottom-heart-empty:hover {
-  background: linear-gradient(#9356dc, #ff79da);
+  transform: scale(0);
 }
 
 .restaurants_card-little-img {
