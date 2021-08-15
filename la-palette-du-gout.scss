@@ -208,14 +208,65 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .h1__title h1 {
     font-family: shrikhand;
 }
 
 //ICONE COEUR
-.heart__icon{
+.restaurants_card-bottom-heart{
     font-size:25px;
+}
+
+.restaurants_card-bottom-heart-completed{  
+    // font-size: 20px;
+    color:$color-primary;
+    position: absolute;
+    bottom:28px;
+    right:20px;
+   transform: scale(0.2);
+    transition-property: transform;
+    transition-duration: 0.5s;
+  opacity: 0;
+  }
+
+  .restaurants_card-bottom-heart-completed:hover{
+    // display: block;
+    transform: scale(1);
+    // z-index: 2;
+     opacity: 1;
+    
+
+
+}
+.restaurants_card-bottom-heart-empty{
+    // font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom:28px;
+    right:20px;
+    transition-property: transform;
+  transition-duration: 0.5s;
+  transform: scale(1);
+    
+//     transform: scale(1);
+//   transition-property: transform;
+//   transition-duration: 1s;
+    // background-color: linear-gradient(#9356dc, #ff79da)
+    
+}
+
+.restaurants_card-bottom-heart-empty:hover{
+    transform: scale(1);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // color: transparent;
+    
+    // display: none;
+    // z-index: 1;
+    // opacity: 0;
+    // visibility: hidden;
 }
 
 

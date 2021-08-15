@@ -123,14 +123,45 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .h1__title h1 {
   font-family: shrikhand;
 }
 
-.heart__icon {
+.restaurants_card-bottom-heart {
   font-size: 25px;
+}
+
+.restaurants_card-bottom-heart-completed {
+  color: #9356dc;
+  position: absolute;
+  bottom: 28px;
+  right: 20px;
+  transform: scale(0.2);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.restaurants_card-bottom-heart-completed:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.restaurants_card-bottom-heart-empty {
+  text-decoration: none;
+  position: absolute;
+  bottom: 28px;
+  right: 20px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+
+.restaurants_card-bottom-heart-empty:hover {
+  transform: scale(1);
 }
 
 .sections {
