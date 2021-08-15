@@ -432,36 +432,7 @@ header img {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.4);
     cursor:pointer;
 }
-// ANIMATIONS BOUTONS
-/*#btn__anination1{
-    
-    animation-delay: 0.1s;
-}
 
-#btn__anination2{
-    animation-delay: 0.2s;
-}
-#btn__anination3{
-    animation-delay: 0.3s;
-}
-#btn__anination4{
-    animation-delay: 0.4s;
-}
-#btn__anination5{
-    animation-delay: 0.5s;
-}
-#btn__anination6{
-    animation-delay: 0.6s;
-}
-#btn__anination7{
-    animation-delay: 0.7s;
-}
-#btn__anination8{
-    animation-delay: 0.8s;
-}
-#btn__anination9{
-    animation-delay: 0.9s;
-}*/
   
 .container__entrees__meal__description__title{
     text-overflow: ellipsis;
@@ -504,9 +475,16 @@ header img {
     // padding-top: 15px;
     // display: block;
     margin-right: -75px;
-
-    
+    transition: transform 0.3s;
 }
+
+.btn-valid:hover{
+    transform: translate(-75px,0);
+    // opacity:1;
+    // visibility: visible;
+}
+    
+
 
 .fa-check{
     color: $color-tertiary;
@@ -520,59 +498,59 @@ header img {
     animation-duration: 1s;
     
 }
-@keyframes fa-check {
-    0% {
-        -webkit-transform: rotate(0);
-                  transform: rotate(0);
+// @keyframes fa-check {
+//     0% {
+//         -webkit-transform: rotate(0);
+//                   transform: rotate(0);
                   
                   
-    }
+//     }
     
-    100%{
-        -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
+//     100%{
+//         -webkit-transform: rotate(360deg);
+//                   transform: rotate(360deg);
                   
                   
-    }
-}
-
-
-// h3{
-//     display: inline;
+//     }
 // }
-.btn-valid:hover{
-    animation-name: btn-valid ;
-    animation-duration:1s;
-    // animation-timing-function: linear;
 
-}
 
-@keyframes btn-valid {
-0% {
-    -webkit-transform: translateX(0);
-              transform: translate(0);
+// // h3{
+// //     display: inline;
+// // }
+// .btn-valid:hover{
+//     animation-name: btn-valid ;
+//     animation-duration:1s;
+//     // animation-timing-function: linear;
+
+// }
+
+// @keyframes btn-valid {
+// 0% {
+//     -webkit-transform: translateX(0);
+//               transform: translate(0);
               
-}
+// }
 
-100%{
-    -webkit-transform: translateX(-75px);
-              transform: translateX(-75px);
+// 100%{
+//     -webkit-transform: translateX(-75px);
+//               transform: translateX(-75px);
               
-}
-}
-@-webkit-keyframes btn-valid{
-    0% {
-        -webkit-transform: translateX(0);
-                  transform: translateX(0);
-    }
+// }
+// }
+// @-webkit-keyframes btn-valid{
+//     0% {
+//         -webkit-transform: translateX(0);
+//                   transform: translateX(0);
+//     }
     
-    100%{
-        -webkit-transform: translateX(-75px);
-                  transform: translateX(-75px);
+//     100%{
+//         -webkit-transform: translateX(-75px);
+//                   transform: translateX(-75px);
                   
-    }
+//     }
 
-}
+// }
 
 
 //BOUTON "Commander"
