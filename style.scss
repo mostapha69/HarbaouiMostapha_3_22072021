@@ -305,7 +305,7 @@ h1 {
 
 .restaurants_card-bottom-heart-completed{  
   font-size: 20px;
-  color:#9356dc;
+  color:$color-primary;
   position: absolute;
   bottom:25px;
   right:20px;
@@ -384,6 +384,20 @@ color:black;
 .restaurants_card-bottom-text p{
     font-size: 17px;
 }
+
+@media screen and (min-width:750px) {
+    .restaurants {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr; 
+        grid-row-gap:30px;
+        grid-column-gap:30px;
+      }
+
+      .section__restaurant{
+          height: auto;
+      }
+ }
 //FOOTER
 
 footer{
@@ -413,6 +427,9 @@ footer img {
 .footer__container__restaurant{
     display: flex;
 }
+.footer__container__restaurant:hover{
+    cursor: pointer;
+}
 
 .footer__container__restaurant__logo{
     padding-right: 11px;
@@ -420,8 +437,16 @@ footer img {
 .footer__container__partner{
     display: flex;
 }
+
+.footer__container__partner:hover{
+    cursor: pointer;
+}
 .footer__container__partner__logo{
 padding-right: 5px;
+}
+
+.footer__container__mentions-legales{
+    cursor: pointer;
 }
 
 .footer__container-list-all{
@@ -438,19 +463,7 @@ padding-right: 5px;
 }
 
 
-@media screen and (min-width:750px) {
-    .restaurants {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr; 
-        grid-row-gap:30px;
-        grid-column-gap:30px;
-      }
 
-      .section__restaurant{
-          height: auto;
-      }
- }
 
  @media screen and (min-width:900px) {
     .footer__container-list{

@@ -306,6 +306,19 @@ h3 {
   font-size: 17px;
 }
 
+@media screen and (min-width: 750px) {
+  .restaurants {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+  }
+
+  .section__restaurant {
+    height: auto;
+  }
+}
 footer {
   background-color: #2D2828;
   color: white;
@@ -334,6 +347,10 @@ footer img {
   display: flex;
 }
 
+.footer__container__restaurant:hover {
+  cursor: pointer;
+}
+
 .footer__container__restaurant__logo {
   padding-right: 11px;
 }
@@ -342,8 +359,16 @@ footer img {
   display: flex;
 }
 
+.footer__container__partner:hover {
+  cursor: pointer;
+}
+
 .footer__container__partner__logo {
   padding-right: 5px;
+}
+
+.footer__container__mentions-legales {
+  cursor: pointer;
 }
 
 .footer__container-list-all {
@@ -360,19 +385,6 @@ footer img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 750px) {
-  .restaurants {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 30px;
-    grid-column-gap: 30px;
-  }
-
-  .section__restaurant {
-    height: auto;
-  }
-}
 @media screen and (min-width: 900px) {
   .footer__container-list {
     display: flex;
