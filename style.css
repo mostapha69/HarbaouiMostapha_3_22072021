@@ -261,6 +261,7 @@ h1 {
 .restaurants_card-bottom-heart-completed:hover {
   transform: scale(1);
   opacity: 1;
+  cursor: pointer;
 }
 
 .restaurants_card-bottom-heart-empty {
@@ -275,6 +276,7 @@ h1 {
 
 .restaurants_card-bottom-heart-empty:hover {
   transform: scale(1);
+  cursor: pointer;
 }
 
 .restaurants_card-little-img {

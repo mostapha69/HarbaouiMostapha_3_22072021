@@ -148,6 +148,7 @@ header img {
 .restaurants_card-bottom-heart-completed:hover {
   transform: scale(1);
   opacity: 1;
+  cursor: pointer;
 }
 
 .restaurants_card-bottom-heart-empty {
