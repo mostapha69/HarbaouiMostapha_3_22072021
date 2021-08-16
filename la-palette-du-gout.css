@@ -317,6 +317,19 @@ header img {
 .btn__container:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  overflow: hidden;
+}
+
+.btn__container:hover .btn-valid {
+  transform: translate(-75px, 0);
+}
+
+.fa-check {
+  transition: transform 0.5s;
+}
+
+.btn__container:hover .fa-check {
+  transform: rotate(360deg);
 }
 
 .container__entrees__meal__description__title {
@@ -359,19 +372,12 @@ header img {
   transition: transform 0.3s;
 }
 
-.btn-valid:hover {
-  transform: translate(-75px, 0);
-}
-
 .fa-check {
   color: #99e2d0;
   background-color: white;
   border-radius: 50%;
-}
-
-.fa-check:hover {
-  animation-name: fa-check;
-  animation-duration: 1s;
+  margin-left: 22px;
+  margin-top: 17px;
 }
 
 .btn__one {

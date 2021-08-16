@@ -116,7 +116,7 @@ body {
 
 
  .page{
-     animation-name: page  3s ;
+     animation-name: page 3s ;
      -webkit-animation-name: page 3s;
  }
  @keyframes page{
@@ -347,7 +347,6 @@ header img {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);
     overflow: hidden; //pour rogner une partie du texte du bouton
 }
-
 //.slide-in-bottom{
  //   animation: opacity 2s;
 //}
@@ -428,11 +427,22 @@ header img {
   
   
 
-.btn__container:hover{
+.btn__container:hover  {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.4);
     cursor:pointer;
+   overflow: hidden;   //pour que btn-valid soit caché quand btn__container:hover
+    // transform: translate(-75px,0);
 }
 
+.btn__container:hover .btn-valid {
+    transform: translate(-75px,0);
+}
+ .fa-check{
+     transition: transform 0.5s;
+ }
+ .btn__container:hover .fa-check{
+     transform: rotate(360deg);
+ }
   
 .container__entrees__meal__description__title{
     text-overflow: ellipsis;
@@ -460,7 +470,8 @@ header img {
   
 //BOUTON VALIDATION
 .btn__container{
-    position:relative
+    position:relative;
+    
 }
 .btn-valid{
     //display: none;
@@ -475,14 +486,16 @@ header img {
     // padding-top: 15px;
     // display: block;
     margin-right: -75px;
-    transition: transform 0.3s;
+     transition: transform 0.3s;
+    
 }
 
-.btn-valid:hover{
-    transform: translate(-75px,0);
-    // opacity:1;
-    // visibility: visible;
-}
+ //.btn-valid:hover{
+     //transform: translate(-75px,0);
+    // display: block;
+//     // opacity:1;
+//     // visibility: visible;
+ //}
     
 
 
@@ -490,14 +503,12 @@ header img {
     color: $color-tertiary;
      background-color: white;
     border-radius: 50%;
+    margin-left: 22px;
+    margin-top: 17px;
     
 }
 
-.fa-check:hover{
-    animation-name: fa-check;
-    animation-duration: 1s;
-    
-}
+
 // @keyframes fa-check {
 //     0% {
 //         -webkit-transform: rotate(0);
