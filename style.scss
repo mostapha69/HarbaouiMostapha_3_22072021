@@ -252,7 +252,7 @@ h1 {
     margin-right: 20px;
 }
 
-.process_icon:hover{
+.process:hover .process_icon{  //pour mettre la couleur aux icônes quand le bouton est en :hover
     color:$color-primary;
 }
 

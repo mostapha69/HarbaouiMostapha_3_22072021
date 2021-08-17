@@ -197,7 +197,7 @@ h1 {
   margin-right: 20px;
 }
 
-.process_icon:hover {
+.process:hover .process_icon {
   color: #9356dc;
 }
 
