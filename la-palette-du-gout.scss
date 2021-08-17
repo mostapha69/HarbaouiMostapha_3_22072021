@@ -333,9 +333,7 @@ header img {
     margin-top:0;
 }
 
-.container__price{
-    font-weight: bold;
-}
+
 
 .btn__container{        //boutons des Entrées, des Plats et des desserts
     background-color: white;
@@ -452,12 +450,20 @@ header img {
     padding-right: 12px;
 }
 
+.container__entrees__meal__description__title p{
+    margin-top:0px;
+}
+
 .container__plats__meal__description__title{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     font-size: 15px;
     padding-right: 12px;
+}
+
+.container__plats__meal__description__title p{
+    margin-top:0;
 }
 
 .container__desserts__meal__description__title{
@@ -467,7 +473,21 @@ header img {
     font-size: 15px;
     padding-right: 12px;
 }
-  
+
+.container__desserts__meal__description__title p{
+    margin-top:0;
+}
+
+
+  // PRIX
+  .container__price{
+    padding-top: 27px;
+    font-weight: bold;
+    transition:transform 0.3s; 
+}
+.btn__container:hover .container__price {
+    transform: translate(-75px,0);
+}
 //BOUTON VALIDATION
 .btn__container{
     position:relative;
