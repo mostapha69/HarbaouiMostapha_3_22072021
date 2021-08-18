@@ -329,9 +329,6 @@ header img {
 }
 
 .container__entrees__meal__description__title {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   font-size: 15px;
   padding-right: 12px;
 }
@@ -341,9 +338,6 @@ header img {
 }
 
 .container__plats__meal__description__title {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   font-size: 15px;
   padding-right: 12px;
 }
@@ -353,9 +347,6 @@ header img {
 }
 
 .container__desserts__meal__description__title {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   font-size: 15px;
   padding-right: 12px;
 }

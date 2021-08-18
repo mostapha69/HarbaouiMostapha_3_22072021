@@ -343,7 +343,7 @@ header img {
     padding-right: 15px;
     padding-left: 10px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 0.2);
-    overflow: hidden; //pour rogner une partie du texte du bouton
+    overflow: hidden; //pour rogner une partie du texte du bouton et btn-valid non visible
 }
 //.slide-in-bottom{
  //   animation: opacity 2s;
@@ -443,9 +443,6 @@ header img {
  }
   
 .container__entrees__meal__description__title{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
     font-size: 15px;
     padding-right: 12px;
 }
@@ -455,9 +452,6 @@ header img {
 }
 
 .container__plats__meal__description__title{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
     font-size: 15px;
     padding-right: 12px;
 }
@@ -467,9 +461,7 @@ header img {
 }
 
 .container__desserts__meal__description__title{
-    text-overflow: ellipsis;   //pour les "..."
-    overflow: hidden;
-    white-space: nowrap;
+       //pour les "..."
     font-size: 15px;
     padding-right: 12px;
 }
