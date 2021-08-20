@@ -389,6 +389,21 @@ header img {
   margin-top: 25px;
 }
 
+.container__plats__meal__description__title p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container__plats__meal__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container__meal__description__text {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .btn__one {
   text-align: center;
   border-radius: 25px;

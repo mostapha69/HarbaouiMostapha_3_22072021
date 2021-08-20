@@ -520,6 +520,19 @@ header img {
     
 }
 
+.container__plats__meal__description__title p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+} 
+.container__plats__meal__title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.container__meal__description__text{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 
 // @keyframes fa-check {
 //     0% {
