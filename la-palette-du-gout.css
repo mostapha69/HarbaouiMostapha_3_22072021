@@ -234,8 +234,6 @@ header img {
 
 .btn__container {
   background-color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-radius: 15px;
   padding-right: 15px;
   padding-left: 10px;
@@ -326,9 +324,17 @@ header img {
 }
 
 .btn__container:hover .btn-valid {
-  transform: translate(-75px, 0);
+  animation: slide-in-btn-valid 0.5s forwards;
 }
 
+@keyframes slide-in-btn-valid {
+  0% {
+    margin-right: -75px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
 .fa-check {
   transition: transform 0.5s;
 }
@@ -362,6 +368,18 @@ header img {
 
 .container__desserts__meal__description__title p {
   margin-top: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container__meal__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container__meal__description__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .container__price {
@@ -371,9 +389,17 @@ header img {
 }
 
 .btn__container:hover .container__price {
-  transform: translate(-75px, 0);
+  animation: slide-in-container__price 0.5s forwards;
 }
 
+@keyframes slide-in-container__price {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 75px;
+  }
+}
 .btn__container {
   position: relative;
 }
@@ -387,7 +413,6 @@ header img {
   font-size: 30px;
   background-color: #99e2d0;
   margin-right: -75px;
-  transition: transform 0.3s;
 }
 
 .fa-check {
@@ -395,7 +420,7 @@ header img {
   background-color: white;
   border-radius: 50%;
   margin-left: 22px;
-  margin-top: 25px;
+  margin-top: 18px;
 }
 
 .container__plats__meal__description__title p {
