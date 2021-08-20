@@ -12,8 +12,8 @@ body {
 .spinner-loading {
   font-size: 100px;
   position: absolute;
-  left: 45%;
-  top: 50%;
+  left: 43%;
+  top: 48%;
   color: #9356dc;
   z-index: 4;
   visibility: hidden;
@@ -50,8 +50,8 @@ body {
   }
 }
 .page {
-  animation-name: page 3s;
-  -webkit-animation-name: page 3s;
+  animation: page 3s;
+  -webkit-animation: page 3s;
 }
 
 @keyframes page {
@@ -59,7 +59,10 @@ body {
     opacity: 0.4;
   }
   70% {
-    opacity: 0.6;
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
@@ -70,7 +73,10 @@ body {
     opacity: 0.4;
   }
   70% {
-    opacity: 0.6;
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
