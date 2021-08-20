@@ -56,10 +56,10 @@ body {
 
 @keyframes page {
   0% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   70% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   90% {
     opacity: 0.5;
