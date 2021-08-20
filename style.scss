@@ -41,7 +41,7 @@ $border-radius:25px;
 body {
   font-family: "Roboto", sans-serif;
   margin:0px;
-  max-width: 1450px; 
+  max-width: 1920px; 
 }
 @media screen and (min-width:1450px){
     body{
@@ -306,7 +306,10 @@ h1 {
 
 .restaurants_card-bottom-heart-completed{  
   font-size: 20px;
-  color:$color-primary;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   bottom:25px;
   right:20px;
