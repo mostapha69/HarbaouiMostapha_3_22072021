@@ -45,7 +45,7 @@ body {
     max-width: 1920px; 
     // z-index: 2;
   }
-@media  screen and (min-width:1450px){
+@media  screen and (min-width:1920px){
     body{
         margin:auto;
         
@@ -468,6 +468,8 @@ header img {
 
 .container__entrees__meal__description__title p{
     margin-top:0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .container__plats__meal__description__title{

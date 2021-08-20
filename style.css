@@ -4,21 +4,21 @@ body {
   max-width: 1920px;
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1920px) {
   body {
     margin: auto;
   }
 }
 .spinner-loading {
-  font-size: 100px;
-  position: absolute;
-  left: 45%;
-  top: 50%;
-  color: #9356dc;
-  z-index: 4;
-  visibility: hidden;
-  -webkit-animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3;
-  animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3;
+    font-size: 100px;
+    position: absolute;
+    left: 43%;
+    top: 48%;
+    color: #9356dc;
+    z-index: 4;
+    visibility: hidden;
+    -webkit-animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3;
+    animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3;
 }
 
 @keyframes spinner-loading {
@@ -50,32 +50,44 @@ body {
   }
 }
 .page {
-  animation-name: page 3s;
-  -webkit-animation-name: page 3s;
+  animation: page 3s;
+  -webkit-animation: page 3s;
 }
 
-@keyframes page {
-  0% {
-    opacity: 0.4;
-  }
-  70% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
+@keyframes page{
+    0% {
+    opacity: 0.1;
 }
-@-webkit-keyframes page {
-  0% {
+
+70%{
     opacity: 0.4;
-  }
-  70% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
 }
+     
+  90%{
+      opacity:0.5;
+  }  
+    100% {
+      opacity: 1;
+      
+    }
+  }
+  @-webkit-keyframes page {
+    0% {
+        opacity: 0.1;
+      
+    }
+    70%{
+        opacity: 0.2;
+    }
+    90%{
+        opacity:0.5;
+    }  
+    100% {
+        opacity: 1;
+      
+    }
+}
+
 header img {
   width: 150px;
   display: block;

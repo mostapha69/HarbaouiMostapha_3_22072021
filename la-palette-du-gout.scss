@@ -45,7 +45,7 @@ body {
     max-width: 1920px; 
     // z-index: 2;
   }
-@media  screen and (min-width:1450px){
+@media  screen and (min-width:1920px){
     body{
         margin:auto;
         
@@ -122,7 +122,7 @@ body {
  }
  @keyframes page{
     0% {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 70%{
@@ -139,7 +139,7 @@ body {
   }
   @-webkit-keyframes page {
     0% {
-        opacity: 0.2;
+        opacity: 0.1;
       
     }
     70%{
