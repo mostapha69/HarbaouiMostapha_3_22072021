@@ -141,7 +141,10 @@ header img {
 }
 
 .restaurants_card-bottom-heart-completed {
-  color: #9356dc;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: absolute;
   bottom: 28px;
   right: 20px;
