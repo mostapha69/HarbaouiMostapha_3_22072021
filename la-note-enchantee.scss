@@ -307,7 +307,7 @@ h2 {
 //SECTION ENTREES
 .container__entrees{
     display: grid;
-    grid-template-rows: 3fr;
+    grid-template-rows: 4fr;
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
 }
@@ -745,7 +745,7 @@ padding-right: 5px;
     }
     .container__entrees{
         display: grid;
-        grid-template-rows: 3fr;
+        grid-template-rows: 4fr;
         grid-template-columns: 370px;
         grid-row-gap: 15px;
     }
@@ -766,7 +766,7 @@ padding-right: 5px;
      }
      .container__entrees{
          display: grid;
-         grid-template-rows: 3fr;
+         grid-template-rows: 4fr;
          grid-template-columns: 400px;
          grid-row-gap: 15px;
      }
