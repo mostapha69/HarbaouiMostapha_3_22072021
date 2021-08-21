@@ -288,6 +288,22 @@ header img {
     padding-right:10px;
     animation: opacity 1s both;
 }
+
+//TITRE DES SECTIONS
+h2 {
+    position: relative;
+  }
+  
+  h2::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #99e2d0;
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+  }
+  
 //SECTION ENTREES
 .container__entrees{
     display: grid;

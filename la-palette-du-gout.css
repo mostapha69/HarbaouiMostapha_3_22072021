@@ -56,10 +56,10 @@ body {
 
 @keyframes page {
   0% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   70% {
-    opacity: 0.2;
+    opacity: 0.4;
   }
   90% {
     opacity: 0.5;
@@ -70,10 +70,10 @@ body {
 }
 @-webkit-keyframes page {
   0% {
-    opacity: 0.4;
+    opacity: 0.1;
   }
   70% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   90% {
     opacity: 0.5;
@@ -180,6 +180,20 @@ header img {
   padding-left: 10px;
   padding-right: 10px;
   animation: opacity 1s both;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #99e2d0;
+  position: absolute;
+  left: 0px;
+  bottom: -8px;
 }
 
 .container__entrees {
