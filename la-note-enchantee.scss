@@ -120,39 +120,31 @@ body {
      -webkit-animation: page 3s;
      
  }
- @keyframes page{
+ @keyframes page {
     0% {
-    opacity: 0.4;
-}
-
-70%{
-    opacity: 0.4;
-}
-     
-  90%{
-      opacity:0.5;
-  }  
+      opacity: 0.2;
+  } 
+  
+  90% {
+      opacity: 0.2;
+  } 
     100% {
       opacity: 1;
-      
     }
   }
   @-webkit-keyframes page {
     0% {
-        opacity: 0.4;
-      
+      opacity: 0.2;
     }
-    70%{
-        opacity: 0.4;
-    }
-    90%{
-        opacity:0.5;
-    }  
+    
+    90% {
+      opacity: 0.2;
+  } 
+  
     100% {
-        opacity: 1;
-      
+      opacity: 1;
     }
-}
+  }
 
 //HEADER
 
