@@ -200,6 +200,10 @@ h1 {
 
 //SECTION Fonctionnement
 
+.fonctionnement h2{
+    margin-left: 20px;
+}
+
 .fonctionnement__process{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
