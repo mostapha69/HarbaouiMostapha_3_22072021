@@ -54,7 +54,7 @@ body {
     position: absolute;
     left: 43%;
     top: 48%;
-    color:#9356dc;
+    color:$color-primary;
     z-index: 4;
      visibility: hidden;
     -webkit-animation: spinner-loading 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 3;
